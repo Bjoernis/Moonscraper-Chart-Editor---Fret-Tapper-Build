@@ -9,7 +9,7 @@
 
 
 ## About Moonscraper - Fret Tapper Build
-Moonscraper - Fret Tapper Build is a song editor for Fret Tapper mainly intended to support the custom song creation for the game. It also supports 5 fret Guitar/Bass/Keys and Drums chars. The game however only supports loading 5 fret Guitar and Fret Tapper charts. The Fret Tapper chart wont destroy your loaded chart, it just ads a new section/instrument called [FretTapper] to the chart when saved. So everything stays intact and the charts can still be used inside of Clone Hero.
+Moonscraper - Fret Tapper Build is a song editor for Fret Tapper mainly intended to support the custom song creation for the game. It also supports 5 fret Guitar/Bass/Keys and Drums chars. The game however only supports loading 5 fret Guitar and Fret Tapper charts. The Fret Tapper chart wont destroy your loaded chart, it just ads a new section/instrument called [FretTapper] to the chart when saved. So everything stays intact and the chart can still be loaded inside of Clone Hero.
 
 
 ## About Moonscraper Chart Editor
