@@ -2,10 +2,10 @@
 >
 
 > If you are looking to download Moonscraper - Fret Tapper Build please see the
-> [releases page](https://github.com/Bjoernis/Moonscraper-Chart-Editor---Fret-Tapper-Build/releases).
+> [Fret Tapper Build releases page](https://github.com/Bjoernis/Moonscraper-Chart-Editor---Fret-Tapper-Build/releases).
 
 > If you are looking to download Moonscraper Chart Editor official release please see the
-> [releases page](https://github.com/FireFox2000000/Moonscraper-Chart-Editor/releases).
+> [Official Build releases page](https://github.com/FireFox2000000/Moonscraper-Chart-Editor/releases).
 
 
 ## About Moonscraper - Fret Tapper Build
