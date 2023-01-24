@@ -1,9 +1,18 @@
 > **⚠️ NOTE: THIS IS NOT THE APPLICATION PROGRAM, THESE ARE THE SOURCE FILES. ⚠️**
 >
-> If you are looking to download Moonscraper Chart Editor please see the
+
+> If you are looking to download Moonscraper - Fret Tapper Build please see the
+> [releases page](https://github.com/Bjoernis/Moonscraper-Chart-Editor---Fret-Tapper-Build/releases).
+
+> If you are looking to download Moonscraper Chart Editor official release please see the
 > [releases page](https://github.com/FireFox2000000/Moonscraper-Chart-Editor/releases).
 
-## About
+
+## About Moonscraper - Fret Tapper Build
+Moonscraper - Fret Tapper Build is a song editor for Fret Tapper mainly intended to support the custom song creation for the game. It also supports 5 fret guitar/bass/keys charts and drums chart as the game supports loading them as well.
+
+
+## About Moonscraper Chart Editor
 Moonscraper Chart Editor is a song editor for Guitar Hero style rhythm games mainly intended to support the custom song creation for games such as Guitar Hero, Clone Hero and Rock Band.
 
 Trailer- https://www.youtube.com/watch?v=G8Qd32TZz4A
