@@ -50,12 +50,12 @@ public class FireSyncronizer : MonoBehaviour {
                 {
                     Chart.GameMode.GHLGuitar, new Dictionary<int, Color>()
                     {
-                        { (int)Note.GHLiveGuitarFret.Black1, Color.gray },
-                        { (int)Note.GHLiveGuitarFret.Black2, Color.gray },
-                        { (int)Note.GHLiveGuitarFret.Black3, Color.gray },
-                        { (int)Note.GHLiveGuitarFret.White1, Color.white },
-                        { (int)Note.GHLiveGuitarFret.White2, Color.white  },
-                        { (int)Note.GHLiveGuitarFret.White3, Color.white },
+                        { (int)Note.GHLiveGuitarFret.Black1, Color.red },
+                        { (int)Note.GHLiveGuitarFret.Black2, Color.red },
+                        { (int)Note.GHLiveGuitarFret.Black3, Color.red },
+                        { (int)Note.GHLiveGuitarFret.White1, Color.red },
+                        { (int)Note.GHLiveGuitarFret.White2, Color.red  },
+                        { (int)Note.GHLiveGuitarFret.White3, Color.red },
                         { (int)Note.GHLiveGuitarFret.Open, Color.magenta },
                     }
                 },

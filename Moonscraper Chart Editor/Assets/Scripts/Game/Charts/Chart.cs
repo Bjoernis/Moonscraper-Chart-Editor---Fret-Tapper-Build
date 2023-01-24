@@ -213,6 +213,7 @@ namespace MoonscraperChartEditor.Song
             Guitar,
             Drums,
             GHLGuitar,
+            FretTapper,
 
             Unrecognised,
         }

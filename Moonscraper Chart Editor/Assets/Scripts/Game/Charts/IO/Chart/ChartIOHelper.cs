@@ -39,6 +39,7 @@ namespace MoonscraperChartEditor.Song.IO
             Guitar,
             Drums,
             GHLiveGuitar,
+            FretTapper,
 
             Unrecognised
         }
@@ -50,13 +51,13 @@ namespace MoonscraperChartEditor.Song.IO
             { 2, (int)Note.GuitarFret.Yellow    },
             { 3, (int)Note.GuitarFret.Blue      },
             { 4, (int)Note.GuitarFret.Orange    },
-            { 7, (int)Note.GuitarFret.Open      },
+            { 8, (int)Note.GuitarFret.Open      },
         };
 
         public static readonly IReadOnlyDictionary<int, Note.Flags> c_guitarFlagNumLookup = new Dictionary<int, Note.Flags>()
         {
-            { 5      , Note.Flags.Forced },
-            { 6      , Note.Flags.Tap },
+            { 6      , Note.Flags.Forced },
+            { 7      , Note.Flags.Tap },
         };
 
         public static readonly IReadOnlyDictionary<int, int> c_drumNoteNumLookup = new Dictionary<int, int>()
@@ -82,16 +83,32 @@ namespace MoonscraperChartEditor.Song.IO
 
         public static readonly IReadOnlyDictionary<int, int> c_ghlNoteNumLookup = new Dictionary<int, int>()
         {
-            { 0, (int)Note.GHLiveGuitarFret.White1    },
-            { 1, (int)Note.GHLiveGuitarFret.White2    },
-            { 2, (int)Note.GHLiveGuitarFret.White3    },
-            { 3, (int)Note.GHLiveGuitarFret.Black1    },
-            { 4, (int)Note.GHLiveGuitarFret.Black2    },
-            { 8, (int)Note.GHLiveGuitarFret.Black3    },
-            { 7, (int)Note.GHLiveGuitarFret.Open      },
+            
+            { 0, (int)Note.GHLiveGuitarFret.Black1    },
+            { 1, (int)Note.GHLiveGuitarFret.Black2    },
+            { 2, (int)Note.GHLiveGuitarFret.Black3    },
+            { 3, (int)Note.GHLiveGuitarFret.White1    },
+            { 4, (int)Note.GHLiveGuitarFret.White2    },
+            { 5, (int)Note.GHLiveGuitarFret.White3    },
+            { 8, (int)Note.GHLiveGuitarFret.Open      },
         };
 
         public static readonly IReadOnlyDictionary<int, Note.Flags> c_ghlFlagNumLookup = c_guitarFlagNumLookup;
+
+        public static readonly IReadOnlyDictionary<int, int> c_FretTapperNoteNumLookup = new Dictionary<int, int>()
+        {
+            
+            { 0, (int)Note.GHLiveGuitarFret.Black1    },
+            { 1, (int)Note.GHLiveGuitarFret.Black2    },
+            { 2, (int)Note.GHLiveGuitarFret.Black3    },
+            { 3, (int)Note.GHLiveGuitarFret.White1    },
+            { 4, (int)Note.GHLiveGuitarFret.White2    },
+            { 5, (int)Note.GHLiveGuitarFret.White3    },
+            { 8, (int)Note.GHLiveGuitarFret.Open      },
+        };
+
+        public static readonly IReadOnlyDictionary<int, Note.Flags> c_FretTapperFlagNumLookup = c_guitarFlagNumLookup;
+
 
         public static readonly IReadOnlyDictionary<string, Song.Difficulty> c_trackNameToTrackDifficultyLookup = new Dictionary<string, Song.Difficulty>()
         {
@@ -112,7 +129,9 @@ namespace MoonscraperChartEditor.Song.IO
             { "GHLGuitar",      Song.Instrument.GHLiveGuitar },
             { "GHLBass",        Song.Instrument.GHLiveBass },
             { "GHLRhythm",      Song.Instrument.GHLiveRhythm },
-            { "GHLCoop",        Song.Instrument.GHLiveCoop },
+            { "FretTapper",        Song.Instrument.GHLiveCoop },
+            { "FretTapper2",      Song.Instrument.FretTapper },
+            
         };
 
         public static readonly IReadOnlyDictionary<Song.Instrument, TrackLoadType> c_instrumentParsingTypeLookup = new Dictionary<Song.Instrument, TrackLoadType>()
@@ -123,6 +142,7 @@ namespace MoonscraperChartEditor.Song.IO
             { Song.Instrument.GHLiveBass,  TrackLoadType.GHLiveGuitar },
             { Song.Instrument.GHLiveRhythm,  TrackLoadType.GHLiveGuitar },
             { Song.Instrument.GHLiveCoop,  TrackLoadType.GHLiveGuitar },
+            { Song.Instrument.FretTapper, TrackLoadType.FretTapper },
         };
 
         public static class MetaData

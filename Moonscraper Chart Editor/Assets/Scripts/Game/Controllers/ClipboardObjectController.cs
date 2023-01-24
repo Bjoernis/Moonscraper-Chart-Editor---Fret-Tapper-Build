@@ -212,6 +212,24 @@ public class ClipboardObjectController : Snapable {
                                 note.ghliveGuitarFret = Note.GHLiveGuitarFret.Open;
                         }
 
+                        if (gameMode == Chart.GameMode.FretTapper)
+                        {
+                            // Pasting from a ghl track
+                            if (!Globals.ghLiveMode)
+                            {
+                                if (note.ghliveGuitarFret == Note.GHLiveGuitarFret.Open)
+                                    note.guitarFret = Note.GuitarFret.Open;
+                                else if (note.ghliveGuitarFret == Note.GHLiveGuitarFret.White3)
+                                    continue;
+                            }
+                        }
+                        else if (Globals.ghLiveMode)
+                        {
+                            // Pasting onto a ghl track
+                            if (note.guitarFret == Note.GuitarFret.Open)
+                                note.ghliveGuitarFret = Note.GHLiveGuitarFret.Open;
+                        }
+
                         note.length = TickFunctions.TickScaling(note.length, clipboard.resolution, editor.currentSong.resolution);
                     }
                     else if (objectToAdd.GetType() == typeof(Starpower))

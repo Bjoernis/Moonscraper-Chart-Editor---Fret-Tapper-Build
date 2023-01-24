@@ -93,6 +93,9 @@ public static class SongIniFunctions
 
             case Song.Instrument.GHLiveRhythm:
                 return "diff_rhythmghl";
+
+                case Song.Instrument.FretTapper:
+                return "diff_frettapper";
         }
 
         return string.Empty;

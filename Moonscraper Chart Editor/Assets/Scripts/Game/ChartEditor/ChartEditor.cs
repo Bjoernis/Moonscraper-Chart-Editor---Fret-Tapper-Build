@@ -885,13 +885,13 @@ public class ChartEditor : UnitySingleton<ChartEditor>
 
         if (awake)
         {
-            MenuBar.currentInstrument = Song.Instrument.Guitar;
+            MenuBar.currentInstrument = Song.Instrument.GHLiveCoop;
             MenuBar.currentDifficulty = Song.Difficulty.Expert;
         }
         else
         {
             
-            menuBar.SetInstrument("guitar");
+            menuBar.SetInstrument("ghlivecoop");
             menuBar.SetDifficulty("expert");
         }
 

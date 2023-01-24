@@ -155,6 +155,9 @@ namespace MoonscraperChartEditor.Song
                     case (Instrument.GHLiveCoop):
                         instrumentName += "GHLive Co-op - ";
                         break;
+                    case (Instrument.FretTapper):
+                        instrumentName += "Fret Tapper - ";
+                        break;
                     default:
                         continue;
                 }
@@ -533,6 +536,9 @@ namespace MoonscraperChartEditor.Song
                 case (Instrument.GHLiveCoop):
                     return Chart.GameMode.GHLGuitar;
 
+                case (Instrument.FretTapper):
+                    return Chart.GameMode.FretTapper;
+
                 default:
                     break;
             }
@@ -560,6 +566,7 @@ namespace MoonscraperChartEditor.Song
             GHLiveBass,
             GHLiveRhythm,
             GHLiveCoop,
+            FretTapper,
             Unrecognised = 99,
         }
 

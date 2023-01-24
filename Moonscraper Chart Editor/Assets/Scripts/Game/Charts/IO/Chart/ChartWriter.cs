@@ -37,6 +37,7 @@ namespace MoonscraperChartEditor.Song.IO
 
         static readonly IReadOnlyDictionary<int, int> c_guitarNoteToSaveNumberLookup = ChartIOHelper.c_guitarNoteNumLookup.ToDictionary((i) => i.Value, (i) => i.Key);
         static readonly IReadOnlyDictionary<int, int> c_ghlNoteToSaveNumberLookup = ChartIOHelper.c_ghlNoteNumLookup.ToDictionary((i) => i.Value, (i) => i.Key);
+        static readonly IReadOnlyDictionary<int, int> c_FretTapperNoteToSaveNumberLookup = ChartIOHelper.c_FretTapperNoteNumLookup.ToDictionary((i) => i.Value, (i) => i.Key);
         static readonly IReadOnlyDictionary<Note.Flags, int> c_guitarFlagToNumLookup = ChartIOHelper.c_guitarFlagNumLookup.ToDictionary((i) => i.Value, (i) => i.Key);
         public static readonly IReadOnlyDictionary<int, int> c_drumNoteToSaveNumberLookup = ChartIOHelper.c_drumNoteNumLookup.ToDictionary((i) => i.Value, (i) => i.Key);
 
@@ -409,6 +410,11 @@ namespace MoonscraperChartEditor.Song.IO
             return GetSaveNoteNumber((int)note.ghliveGuitarFret, c_ghlNoteToSaveNumberLookup);
         }
 
+        static int GetFretTapperSaveNoteNumber(Note note)
+        {
+            return GetSaveNoteNumber((int)note.ghliveGuitarFret, c_FretTapperNoteToSaveNumberLookup);
+        }
+
         #region Per-object write methods
 
         static readonly string s_anchorFormat = string.Format(" = A {{0}}{0}{1}{{1}}", Globals.LINE_ENDING, Globals.TABSPACE);
@@ -571,6 +577,11 @@ namespace MoonscraperChartEditor.Song.IO
                             break;
                         }
                     case ChartIOHelper.TrackLoadType.GHLiveGuitar:
+                        {
+                            fretNumber = GetGHLSaveNoteNumber(note);
+                            break;
+                        }
+                    case ChartIOHelper.TrackLoadType.FretTapper:
                         {
                             fretNumber = GetGHLSaveNoteNumber(note);
                             break;
