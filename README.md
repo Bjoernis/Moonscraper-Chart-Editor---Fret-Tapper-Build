@@ -9,7 +9,7 @@
 
 
 ## About Moonscraper - Fret Tapper Build
-Moonscraper - Fret Tapper Build is a song editor for Fret Tapper mainly intended to support the custom song creation for the game. It also supports 5 fret guitar/bass/keys charts and drums chart as the game supports loading them as well.
+Moonscraper - Fret Tapper Build is a song editor for Fret Tapper mainly intended to support the custom song creation for the game. It also supports 5 fret guitar/bass/keys charts and drums chart as the game supports loading them as well. The Fret Tapper chart wont destroy loaded charts, it just ads a new section/instrument called [FretTapper] to the chart when saved. So everything stays intact.
 
 
 ## About Moonscraper Chart Editor
